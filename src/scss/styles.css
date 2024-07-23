@@ -45,12 +45,6 @@
 .carousel-button-nexti:hover {
   right: 20px;
 }
-.ri-arrow-right-s-line :hover {
-  opacity: 100% !important;
-}
-.ri-arrow-left-s-line :hover {
-  opacity: 100% !important;
-}
 
 .fs-custom {
   font-size: 14px;
@@ -175,6 +169,9 @@
   .form-control {
     border-radius: 0.4rem !important;
     border-color: gray;
+  }
+  .heading-text {
+    font-size: 1.2rem !important;
   }
 }
 
