@@ -1,0 +1,156 @@
+@import "./custom-bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+
+  /* outline: 1px solid green; */
+  /* transition: 0.3s ease-in-out; */
+}
+
+.nav-item .nav-links {
+  cursor: pointer !important;
+}
+
+.nav-link:hover {
+  color: green !important;
+}
+
+.form-control {
+  height: 44px;
+  font-size: 13px !important;
+  border-radius: 0.55rem !important;
+}
+
+.fs-custom {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.carousel-indicators button {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+  border: none;
+  margin-left: 5px !important;
+}
+
+.carousel-indicators {
+  margin-bottom: 0px;
+}
+
+.small_section {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.small_section button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.s_s_1 {
+  top: 40%;
+  right: 10%;
+}
+
+.s_s_2 {
+  top: 40%;
+  left: 15%;
+}
+
+.s_s_3 {
+  top: 40%;
+  left: 15%;
+}
+
+.s_m_1 {
+  width: 100vw;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  bottom: 0%;
+}
+
+.custom-card-wrapper {
+  scrollbar-width: none;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.itemcard {
+  height: 220px;
+  width: 170px;
+}
+
+.itemcard span {
+  font-size: 14px !important;
+}
+
+.itemcard img {
+  object-fit: contain;
+}
+
+.carousel-indicators .active {
+  background-color: white !important;
+}
+
+.object-fit {
+  object-fit: cover;
+}
+
+.shop-cat::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(183, 179, 179);
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-brand img {
+    height: 24px !important;
+    width: 160px !important;
+  }
+
+  .icons-stock img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .itemcard img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .itemcard span {
+    font-size: 10px !important;
+    word-break: break-all !important;
+  }
+
+  .itemcard {
+    max-width: 90px;
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .form-control {
+    border-radius: 0.4rem !important;
+    border-color: gray;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .border-lg-bottom {
+    border-bottom: 1px solid #d3d3d3 !important;
+  }
+}

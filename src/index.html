@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/script.js"></script>
+    <link rel="stylesheet" href="./scss/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header
+      class="container-fluid pt-4 bg-light pb-lg-2 mx-auto position-sticky z-3 top-0"
+    >
+      <div class="row border-lg-bottom pb-lg-4 pb-2">
+        <!-- Brand and menu icon -->
+        <div class="col-8 col-lg-3 d-flex justify-content-start">
+          <button
+            class="navbar-toggler shadow-none border-0 d-inline-block d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span>
+              <img src="./image/svgexport-1.svg" alt="" />
+            </span>
+          </button>
+          <a class="navbar-brand ms-3" href="#"
+            ><img
+              src="./image/svgexport-2.svg"
+              width="230"
+              height="38"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <!-- Offcanvas Body -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="col-lg-6 ps-lg-5 col-12 mt-2 mt-lg-0 order-1 order-lg-0">
+          <form class="d-flex my-lg-0 position-relative" role="search">
+            <input
+              class="form-control border-lg- px-3"
+              type="search"
+              placeholder="FIND YOUR FAVORITES"
+              aria-label="Search"
+            />
+            <button
+              class="btn position-absolute shadow-none border-0 end-0 top-50 translate-middle-y"
+              type="submit"
+            >
+              <i class="text-black-50 fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Icons -->
+        <div
+          class="icons-stock col-4 col-lg-3 pe-lg-5 pe-3 d-flex gap-3 justify-content-end align-items-center"
+        >
+          <img
+            class="d-md-none"
+            src="./image/svgexport-4.svg"
+            width="22"
+            height="22"
+            alt=""
+          />
+          <img src="./image/svgexport-6.svg" idth="25" height="25" alt="" />
+          <img
+            class="d-none d-md-inline-block"
+            src="./image/svgexport-7.svg"
+            width="25"
+            height="25"
+            alt=""
+          />
+          <img src="./image/svgexport-8.svg" width="25" height="25" alt="" />
+        </div>
+      </div>
+
+      <!-- Large Screen Navbar -->
+      <div class="row d-none d-lg-flex pt-2">
+        <div class="col-12 mx-auto">
+          <ul class="nav d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-black fs-custom">
+                new in
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-black fs-custom">
+                women
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-black fs-custom"> man </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-black fs-custom"> kids </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-black fs-custom">
+                beauty
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-black fs-custom">
+                accessories
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-black fs-custom"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase text-danger fw-bolder fs-custom"
+              >
+                special offers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-black fs-custom">
+                the edit
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Area -->
+    <main>
+      <!-- Main Carousel -->
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-fade d-none d-lg-block"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <div class="small_section s_s_1">
+              <h1 class="text-white fw-bolder" style="font-size: 3.2rem">
+                UNSTITCHED
+              </h1>
+              <h2 class="text-white">SUMMER '24</h2>
+              <button
+                class="fw-semibold py-2 px-4 rounded-3 border-0"
+                style="font-size: 0.9rem"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <img src="./image/slider_1.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="small_section s_s_3">
+              <h1 class="text-black fw-bolder" style="font-size: 3.2rem">
+                UNSTITCHED
+              </h1>
+              <h2 class="text-black">DAY TO DAY IV</h2>
+              <button
+                class="fw-semibold bg-black text-white py-2 px-4 rounded-3 border-0"
+                style="font-size: 0.9rem"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <img src="./image/slider_2.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="small_section s_s_2">
+              <h1 class="text-white fw-bolder" style="font-size: 3.2rem">
+                READY TO WEAR
+              </h1>
+              <h2 class="text-white">SUMMER '24</h2>
+              <button
+                class="fw-semibold py-2 px-4 rounded-3 border-0"
+                style="font-size: 0.9rem"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <img src="./image/slider_3.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="small_section s_s_3">
+              <h1 class="text-black fw-bolder" style="font-size: 3.2rem">
+                WEST
+              </h1>
+              <h2 class="text-black">SUMMER NEW ARRIVALS</h2>
+              <button
+                class="fw-semibold bg-black text-white py-2 px-4 rounded-3 border-0"
+                style="font-size: 0.9rem"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <img src="./image/slider_4.webp" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!-- Main Mobile Carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-fade mt-0 pt-0 d-lg-none"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active position-relative"
+            data-bs-interval="2000"
+          >
+            <div class="small_section s_m_1">
+              <h1 class="text-white fw-bolder fs-4">UNSTITCHED</h1>
+              <h2 class="text-white">SUMMER '24</h2>
+              <button
+                class="fw-semibold py-2 px-4 rounded-3 border-0"
+                style="font-size: 0.7rem"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <img
+              src="./image/mobile_slider_1.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="small_section s_m_1">
+              <h1 class="text-white fw-bolder fs-4">READY TO WEAR</h1>
+              <h2 class="text-white">SUMMER '24</h2>
+              <button
+                class="fw-semibold py-2 px-4 rounded-3 border-0"
+                style="font-size: 0.7rem"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <img
+              src="./image/mobile_slider_2.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="small_section s_m_1">
+              <h1 class="text-white fw-bolder fs-4">UNSTITCHED</h1>
+              <h2 class="text-white">DAY TO DAY IV</h2>
+              <button
+                class="fw-semibold bg-black text-white py-2 px-4 rounded-3 border-0"
+                style="font-size: 0.7rem"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <img
+              src="./image/mobile_slider_3.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="small_section s_m_1">
+              <h1 class="text-white fw-bolder fs-4">WEST</h1>
+              <h2 class="text-white">SUMMER NEW ARRIVALS</h2>
+              <button
+                class="fw-semibold bg-black text-white py-2 px-4 rounded-3 border-0"
+                style="font-size: 0.7rem"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <img
+              src="./image/mobile_slider_4.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Whats New -->
+      <div class="container-fluid py-3 mt-3 mt-lg-5">
+        <div class="row">
+          <div class="col-3 col-lg-3 col-xl-2">
+            <div class="d-flex align-items-center mt-3 mt-md-5 ps-md-4">
+              <h2 class="fw-normal text-uppercase">
+                What's <br />
+                New
+              </h2>
+            </div>
+          </div>
+          <div class="col-9 col-lg-9 col-xl-10">
+            <div class="custom-card-wrapper d-flex">
+              <div class="itemcard me-2 d-flex flex-column align-items-center">
+                <img
+                  class="rounded-circle border-2 border-dark-subtle border"
+                  height="160"
+                  width="160"
+                  src="./image//rc-1.avif"
+                  alt=""
+                />
+                <span class="pt-2 mb-0 fw-normal">Monochrome</span>
+                <span class="fw-normal">Unstitched</span>
+              </div>
+              <div class="itemcard me-1 d-flex flex-column align-items-center">
+                <img
+                  class="rounded-circle border-2 border-dark-subtle border"
+                  height="160"
+                  width="160"
+                  src="./image//rc-2.avif"
+                  alt=""
+                />
+                <span class="pt-2 mb-0 fw-normal">Ready To Wear</span>
+                <span class="fw-normal">Summer 24</span>
+              </div>
+              <div class="itemcard me-1 d-flex flex-column align-items-center">
+                <img
+                  class="rounded-circle border-2 border-dark-subtle border"
+                  height="160"
+                  width="160"
+                  src="./image//rc-3.avif"
+                  alt=""
+                />
+                <span class="pt-2 mb-0 fw-normal">Men's Stitched</span>
+                <span class="fw-normal">Summer New Arrivals</span>
+              </div>
+              <div class="itemcard me-1 d-flex flex-column align-items-center">
+                <img
+                  class="rounded-circle border-2 border-dark-subtle border"
+                  height="160"
+                  width="160"
+                  src="./image//rc-4.avif"
+                  alt=""
+                />
+                <span class="pt-2 mb-0 fw-normal">Silk</span>
+                <span class="fw-normal">Unstitched</span>
+              </div>
+              <div class="itemcard me-1 d-flex flex-column align-items-center">
+                <img
+                  class="rounded-circle border-2 border-dark-subtle border"
+                  height="160"
+                  width="160"
+                  src="./image//rc-5.avif"
+                  alt=""
+                />
+                <span class="pt-2 mb-0 fw-normal">Kids</span>
+                <span class="fw-normal">Summer New Arrivals</span>
+              </div>
+              <div class="itemcard me-1 d-flex flex-column align-items-center">
+                <img
+                  class="rounded-circle border-2 border-dark-subtle border"
+                  height="160"
+                  width="160"
+                  src="./image//rc-6.avif"
+                  alt=""
+                />
+                <span class="pt-2 mb-0 fw-normal">Summer Solids</span>
+                <span class="fw-normal">Ready To Wear</span>
+              </div>
+              <div class="itemcard d-flex me-1 flex-column align-items-center">
+                <img
+                  class="rounded-circle border-2 border-dark-subtle border"
+                  height="160"
+                  width="160"
+                  src="./image//rc-8.avif"
+                  alt=""
+                />
+                <span class="pt-2 mb-0 fw-normal">Fragrances</span>
+              </div>
+              <div class="itemcard d-flex me-1 flex-column align-items-center">
+                <img
+                  class="rounded-circle border-2 border-dark-subtle border"
+                  height="160"
+                  width="160"
+                  src="./image//rc-9.avif"
+                  alt=""
+                />
+                <span class="pt-2 mb-0 fw-normal">Home</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category and Trending -->
+      <div class="container-fluid py-3 px-0 mx-0 mt-4">
+        <div class="d-flex p-0 m-0 justify-content-center">
+          <h1 class="text-uppercase fs-4 shop-cat fw-bold position-relative">
+            shop by category
+          </h1>
+        </div>
+      </div>
+
+      <div class="container-fluid py-3 px-0 mx-0 mt-4">
+        <div class="d-flex p-0 m-0 justify-content-center">
+          <h1 class="text-uppercase fs-4 shop-cat fw-bold position-relative">
+            Trending
+          </h1>
+        </div>
+      </div>
+
+      <div class="container-fluid py-3 px-0 mx-0 mt-4">
+        <div class="d-flex p-0 m-0 justify-content-center">
+          <h1 class="text-uppercase fs-4 shop-cat fw-bold position-relative">
+            more to explore
+          </h1>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
