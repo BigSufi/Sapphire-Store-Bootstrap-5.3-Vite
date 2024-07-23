@@ -23,6 +23,35 @@
   border-radius: 0.55rem !important;
 }
 
+.carousel-button-previ {
+  display: flex;
+  justify-content: start !important;
+  transition: 0.3s ease-in-out;
+  opacity: 0%;
+  left: 30px;
+}
+.carousel-button-previ:hover {
+  left: 20px;
+}
+
+.carousel-button-nexti {
+  display: flex;
+  justify-content: end !important;
+  transition: 0.3s ease-in-out;
+  right: 30px;
+  opacity: 0%;
+}
+
+.carousel-button-nexti:hover {
+  right: 20px;
+}
+.ri-arrow-right-s-line :hover {
+  opacity: 100% !important;
+}
+.ri-arrow-left-s-line :hover {
+  opacity: 100% !important;
+}
+
 .fs-custom {
   font-size: 14px;
   font-weight: 500;
