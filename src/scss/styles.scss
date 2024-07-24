@@ -5,10 +5,14 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 
-  /* outline: 1px solid green; */
+  // outline: 1px solid green;
   /* transition: 0.3s ease-in-out; */
 }
-
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: black;
+}
 .nav-item a {
   cursor: pointer !important;
 }
@@ -21,6 +25,20 @@
   height: 44px;
   font-size: 13px !important;
   border-radius: 0.55rem !important;
+}
+
+.footer-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px !important;
+  z-index: 999999 !important;
+}
+
+.footer-button:hover {
+  background-color: #56cfe1 !important;
+  border-color: #56cfe1 !important;
 }
 
 .overlay-div {
@@ -68,6 +86,12 @@
 }
 .fs-p-custom-h-mobile {
   font-size: 12px;
+}
+.fs-footer {
+  font-size: 12px;
+}
+.fs-footer-heading {
+  font-size: 13px;
 }
 .indv-card-p:hover .p-button {
   visibility: visible;
@@ -183,6 +207,10 @@
 
 .object-fit {
   object-fit: cover;
+}
+
+.bg-footer {
+  background-color: #f6f6f8;
 }
 
 .shop-cat::after {
